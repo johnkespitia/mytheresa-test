@@ -9,6 +9,7 @@ services:
       - "./src/:/var/www/html/"
     ports:
       - "9000:80"
+    command: [ "./start.sh" ]
   mysql-server:
     image: mysql:8.0.19
     restart: always
