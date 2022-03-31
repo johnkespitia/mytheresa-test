@@ -122,4 +122,5 @@ RUN docker-php-ext-install zip
 RUN apt-get install -y vim
 COPY ./configs/000-default.conf /etc/apache2/sites-available/000-default.conf
 WORKDIR ./mytheresa
+COPY ./src/mytheresa/start.sh ./
 RUN chmod +x ./start.sh
